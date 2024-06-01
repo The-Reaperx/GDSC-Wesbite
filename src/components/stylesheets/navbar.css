@@ -1,0 +1,35 @@
+/* 
+    -
+    - This Files is used for overwriting the navbar's default styles.
+    -
+
+*/
+
+/* Parent/Header */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Buttons container */
+.navbar-nav {
+  display: flex;
+  font-size: 1.3rem;
+  margin-right: 3rem;
+  gap: 4rem;
+} 
+
+div .justify-content-evenly {
+  justify-content: end !important;
+  align-items: center !important;
+}
+
+/* Media  */
+@media screen and (max-width: 1000px) {
+  .navbar-nav {
+    gap: 0;
+  }
+  div .justify-content-evenly {
+    margin: 0 auto;
+  }
+}

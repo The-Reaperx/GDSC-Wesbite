@@ -1,0 +1,265 @@
+/* Parent of TLSection */
+
+.timeline-section {
+  display: flex;
+  flex-direction: column;
+  min-height: 75vh;
+
+  gap: 3rem;
+  padding: 3rem 2rem;
+  box-sizing: border-box;
+
+  /*background-image: url(../assets/TL-background.png);
+    background-position: none;
+    background-position: center;
+    background-size: cover; */
+
+  color: #ffffff;
+  font-family: cascadia;
+  position: relative;
+}
+.timeline-background {
+  position: absolute;
+  top: 0; /* Adjust this value based on your design */
+  left: 0; /* Adjust this value based on your design */
+  width: 100%; /* Adjust this value based on your design */
+  height: 50%;
+  z-index: -1;
+}
+.timeline-background-m {
+  display: none;
+}
+/*  
+      -
+      - Header Starts here
+      -
+  */
+.timeline-main-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 60%;
+
+  box-sizing: border-box;
+  padding-bottom: 1rem;
+}
+.timeline-title {
+  font-size: 3.5rem;
+}
+
+/* 
+    -
+    - Timeline elements/boxes & its container starts here
+    -
+  */
+
+.tl-boxes-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: max(2%, 1rem);
+  align-items: center;
+  justify-content: center;
+}
+
+.tl-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 200px;
+  max-height: 200px;
+  min-width: 200px;
+  min-height: 200px;
+
+  border-radius: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+
+  background-color: white;
+  color: #000000;
+
+  border: solid 2px #fbbc05;
+}
+
+.tl-box span,
+.tl-box div {
+  /* transform: translate(-50%, -50%) rotate(-45deg); */
+  /* word-wrap: break-word; */
+
+  text-align: center;
+  white-space: wrap;
+}
+
+.box-date {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 1.4rem;
+  font-weight: 600;
+
+  width: 100%;
+  height: 70%;
+}
+
+.box-date .day {
+  color: blue;
+  font-size: 3.5rem;
+}
+.underline-span {
+  position: relative;
+  color: black; /* Text color */
+  display: inline-block;
+}
+
+.underline-span::after {
+  content: "";
+  position: absolute;
+  left: 10%; /* Adjust the left position to center the underline */
+  bottom: 5%;
+  width: 80%; /* Underline covers 80% of the span */
+  height: 5px; /* Height of the underline */
+  background-color: #fbbc05; /* Underline color */
+}
+
+.box-details {
+  font-size: 1.2rem;
+}
+
+/* media  */
+
+@media screen and (max-width: 600px) {
+  /* Parent */
+  .timeline-section {
+    gap: 2rem;
+    min-height: 100vh+25%;
+  }
+  .timeline-background-m {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; /* Adjust this value based on your design */
+    left: 0;
+    z-index: -1;
+  }
+  .timeline-background {
+    display: none;
+  }
+
+  /* Header */
+  .timeline-main-heading {
+    margin-left: 0;
+  }
+
+  /* Boxes */
+  .tl-boxes-container {
+    gap: 1rem;
+  }
+
+  .tl-box {
+    max-width: 160px;
+    max-height: 10px;
+    min-width: 160px;
+    min-height: 160px;
+  }
+
+  .box-date {
+    font-size: 1.1rem;
+  }
+
+  .box-date .day {
+    color: blue;
+    font-size: 2.4rem;
+  }
+
+  .underline-span::after {
+    height: 3px; /* Height of the underline */
+  }
+
+  .box-details {
+    font-size: 1rem;
+    margin: 0.3rem;
+  }
+
+  /*Experimenting*/
+  .timeline-title {
+    font-family: cascadia;
+    text-align: center;
+    font-size: 2.5em;
+  }
+  .underline {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 398px) {
+  /* Parent */
+  .timeline-section {
+    gap: 2rem;
+    min-height: 100vh+25%;
+  }
+  .timeline-main-heading{
+    padding-bottom: 0;
+  }
+  .timeline-background-m {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; /* Adjust this value based on your design */
+    left: 0;
+    z-index: -1;
+  }
+  .timeline-background {
+    display: none;
+  }
+
+  /* Header */
+  .timeline-main-heading {
+    margin-left: 0;
+  }
+
+  /* Boxes */
+  .tl-boxes-container {
+    gap: 1rem;
+  }
+
+  .tl-box {
+    max-width: 132px;
+    max-height: 8px;
+    min-width: 132px;
+    min-height: 132px;
+  }
+
+  .box-date {
+    font-size: 1rem;
+  }
+
+  .box-date .day {
+    color: blue;
+    font-size: 2rem;
+  }
+
+  .underline-span::after {
+    height: 3px; /* Height of the underline */
+  }
+
+  .box-details {
+    font-size: 0.9rem;
+    margin: 0.3rem;
+  }
+
+  /*Experimenting*/
+  .timeline-title {
+    font-family: cascadia;
+    text-align: center;
+    font-size: 2.5em;
+  }
+  .underline {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+}

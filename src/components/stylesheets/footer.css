@@ -1,0 +1,43 @@
+.footer-container {
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+  display: flexbox;
+  background-color: rgb(255, 255, 255);
+}
+
+.footer-info {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 700px) {
+  .footer-info {
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  .text-right {
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  /* Old */
+
+  /* .socials {
+
+    width: fit-content;
+    margin: auto;
+    padding-right: 20px;
+  } */
+
+  /* Added the following */
+  .socials {
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100%;
+  }
+
+  .flex.gap-4 {
+    padding: 0;
+  }
+}

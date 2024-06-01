@@ -1,0 +1,192 @@
+.registration-page {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  background-color: white;
+
+  box-sizing: border-box;
+  padding: 1.5rem;
+  padding-top: 2rem;
+  margin-top: 13rem;
+}
+
+.register-girl {
+  position: relative;
+  bottom: 140px;
+  left: 400px;
+  width: 150px;
+  height: 0;
+}
+.cloud1 {
+  position: relative;
+  left: 500px;
+  bottom: 250px;
+  width: 200px;
+  height: 0;
+}
+.cloud2 {
+  position: relative;
+  left: 100px;
+  bottom: 150px;
+  width: 100px;
+  height: 0;
+}
+
+.register-button {
+  min-width: 16rem;
+  min-height: 4rem;
+  background-color: #4da743;
+}
+
+.button-text {
+  font-size: 2rem;
+}
+
+/* 
+      -
+      - Header (title & stuff)
+      -
+  */
+.section-header {
+  display: flex;
+  width: 85%;
+}
+.section-title {
+  font-size: 4rem;
+  border-bottom: solid 3px #4da743;
+  border-radius: 10px;
+}
+
+/* 
+      -
+      - List of Terms 
+      -
+  */
+
+/* Big parent */
+.terms-section {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 25px;
+
+  background-color: #d7f4e3;
+}
+.terms-msg {
+  font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 10px;
+  
+}
+
+.terms-list {
+  margin: 0;
+  padding: 0;
+  counter-reset: list-counter; /* Reset counter */
+}
+
+.terms-list {
+  list-style-type: none; /* Remove default bullet points */
+}
+
+.terms-list li {
+  margin-bottom: 0.7rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #333;
+  counter-increment: list-counter;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style for numbering */
+.terms-list li::before {
+  content: counter(list-counter) ") ";
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* 
+      -
+      - Button & its container 
+      -
+  */
+
+.button-container {
+  font-size: 2.2rem;
+  padding: 1rem 6rem;
+
+  border-radius: 1.5rem;
+  background-color: #4da743;
+  color: white;
+}
+
+.registration-main-heading {
+  margin-right: 60%;
+}
+.registration-title {
+  font-family: cascadia;
+  font-size: 3.2rem;
+  padding-bottom: 0;
+}
+.underline {
+  padding-bottom: 25px;
+}
+
+/*Experimenting*/
+
+
+
+@media screen and (max-width: 1200px) {
+  .register-girl,
+  .cloud1,
+  .cloud2 {
+    display: none;
+  }
+  .registration-page{
+    margin-top: 3rem;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .registration-title {
+    font-family: cascadia;
+    text-align: center;
+    font-size: 2em;
+  }
+  .underline {
+    text-align: center;
+  }
+
+  .registration-page {
+    padding-top: 1.5rem;
+    display: flexbox;
+    flex-direction: column;
+    margin-top: 1.5rem;
+  }
+  .terms-section {
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+  .terms-msg {
+    font-size: 1.5em;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .terms-list li {
+    font-size: 1.1rem;
+  }
+
+  .button-container {
+    width: 10px;
+  }
+  .button-text {
+    font-size: 1.5rem;
+  }
+  .registration-main-heading {
+    margin: 0 auto;
+  }
+}
