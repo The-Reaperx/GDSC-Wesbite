@@ -2,7 +2,7 @@
 
 This is a template Website that should be used for When we collaborate with Companies to Host competitions or have private competitions hosted by the club.
 
-Live Website : https://gdsc-competitions.vercel.app/
+Live Website : https://gdsc-competition.vercel.app
 
 ## Authors
 
