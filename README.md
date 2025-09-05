@@ -1,3 +1,7 @@
+
+![Logo](https://i.postimg.cc/59X3ZCMw/GDSC-Banner.png)
+
+
 # GDSC Competitions
 
 This is a template Website that should be used for When we collaborate with Companies to Host competitions or have private competitions hosted by the club.
